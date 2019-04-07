@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hook PUBLIC "-//Liferay//DTD Hook 6.1.0//EN" "http://www.liferay.com/dtd/liferay-hook_6_1_0.dtd">
+
+<hook>
+    <portal-properties>portal.properties</portal-properties>
+    <language-properties>Language_fa.properties</language-properties>
+    <custom-jsp-dir>/META-INF/custom_jsps</custom-jsp-dir>
+    <service>
+        <service-type>com.liferay.portal.service.UserLocalService</service-type>
+        <service-impl>com.liferay.sample.hook.MyUserLocalServiceImpl</service-impl>
+    </service>
+    <struts-action>
+<struts-action-path>/login/login</struts-action-path>
+<struts-action-impl>com.sample.hook.CustomLoginAction</struts-action-impl>
+</struts-action>
+</hook>
+
+
+	
+

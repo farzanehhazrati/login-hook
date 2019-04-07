@@ -1,0 +1,139 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=5884, tid=872
+#
+# JRE version:  (7.0_45-b18) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.45-b08 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000001f8e800):  JavaThread "Unknown thread" [_thread_in_vm, id=872, stack(0x00000000022c0000,0x00000000023c0000)]
+
+Stack: [0x00000000022c0000,0x00000000023c0000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000001f8e800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=872, stack(0x00000000022c0000,0x00000000023c0000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 28672K, used 491K [0x00000000e0280000, 0x00000000e2280000, 0x0000000100000000)
+  eden space 24576K, 2% used [0x00000000e0280000,0x00000000e02fae80,0x00000000e1a80000)
+  from space 4096K, 0% used [0x00000000e1e80000,0x00000000e1e80000,0x00000000e2280000)
+  to   space 4096K, 0% used [0x00000000e1a80000,0x00000000e1a80000,0x00000000e1e80000)
+ ParOldGen       total 65024K, used 0K [0x00000000a0800000, 0x00000000a4780000, 0x00000000e0280000)
+  object space 65024K, 0% used [0x00000000a0800000,0x00000000a0800000,0x00000000a4780000)
+ PSPermGen       total 21504K, used 656K [0x000000009b600000, 0x000000009cb00000, 0x00000000a0800000)
+  object space 21504K, 3% used [0x000000009b600000,0x000000009b6a41e8,0x000000009cb00000)
+
+Card table byte_map: [0x00000000053c0000,0x00000000056f0000] byte_map_base: 0x0000000004ee5000
+
+Polling page: 0x0000000000100000
+
+Code Cache  [0x00000000023c0000, 0x0000000002630000, 0x00000000053c0000)
+ total_blobs=38 nmethods=0 adapters=20 free_code_cache=48889Kb largest_free_block=50062528
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.029 loading class 0x0000000001e803a0
+Event: 0.029 loading class 0x0000000001e803a0 done
+Event: 0.029 loading class 0x0000000001e803f0
+Event: 0.029 loading class 0x0000000001e803f0 done
+Event: 0.029 loading class 0x0000000001e80440
+Event: 0.029 loading class 0x0000000001e80440 done
+Event: 0.030 loading class 0x0000000001e811a0
+Event: 0.030 loading class 0x0000000001e811a0 done
+Event: 0.030 loading class 0x0000000001e80dc0
+Event: 0.030 loading class 0x0000000001e80dc0 done
+
+
+Dynamic libraries:
+0x000000013ffc0000 - 0x000000013fff3000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x0000000076e80000 - 0x000000007702a000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000076c60000 - 0x0000000076d7f000 	C:\Windows\system32\kernel32.dll
+0x000007fefcf10000 - 0x000007fefcf7b000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefeb40000 - 0x000007fefec1b000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefd300000 - 0x000007fefd39f000 	C:\Windows\system32\msvcrt.dll
+0x000007fefeb20000 - 0x000007fefeb3f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefe9f0000 - 0x000007fefeb1d000 	C:\Windows\system32\RPCRT4.dll
+0x0000000076d80000 - 0x0000000076e7a000 	C:\Windows\system32\USER32.dll
+0x000007fefd600000 - 0x000007fefd667000 	C:\Windows\system32\GDI32.dll
+0x000007fefd250000 - 0x000007fefd25e000 	C:\Windows\system32\LPK.dll
+0x000007fefd6f0000 - 0x000007fefd7ba000 	C:\Windows\system32\USP10.dll
+0x000007fefb600000 - 0x000007fefb7f4000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_fa3b1e3d17594757\COMCTL32.dll
+0x000007feff0e0000 - 0x000007feff151000 	C:\Windows\system32\SHLWAPI.dll
+0x000007feff160000 - 0x000007feff18e000 	C:\Windows\system32\IMM32.DLL
+0x000007fefd7f0000 - 0x000007fefd8f9000 	C:\Windows\system32\MSCTF.dll
+0x0000000067d30000 - 0x0000000067e02000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x000000005c670000 - 0x000000005ce39000 	C:\Program Files\Java\jre7\bin\server\jvm.dll
+0x000007fef8b30000 - 0x000007fef8b39000 	C:\Windows\system32\WSOCK32.dll
+0x000007fefd3a0000 - 0x000007fefd3ed000 	C:\Windows\system32\WS2_32.dll
+0x000007fefd7e0000 - 0x000007fefd7e8000 	C:\Windows\system32\NSI.dll
+0x000007fefa960000 - 0x000007fefa99b000 	C:\Windows\system32\WINMM.dll
+0x0000000077040000 - 0x0000000077047000 	C:\Windows\system32\PSAPI.DLL
+0x000000006bfc0000 - 0x000000006bfcf000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x0000000068340000 - 0x0000000068368000 	C:\Program Files\Java\jre7\bin\java.dll
+0x0000000069890000 - 0x00000000698a5000 	C:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dant.home=D:\6.1\liferay-developer-studio\DeveloperStudio\plugins\org.apache.ant_1.9.2.v201404171502 -Dant.library.dir=D:\6.1\liferay-developer-studio\DeveloperStudio\plugins\org.apache.ant_1.9.2.v201404171502\lib -Djava.library.path=C:\Windows\system32;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\TortoiseSVN\bin;d:\6.1\apache-ant-1.9.6\bin;C:\Program Files (x86)\Java\jdk1.6.0_33\bin/bin;C:\apache-tomcat-6.0.33/bin;d:\Liferay-94\TestConvert\apache-maven-3.3.9\bin;.;D:\6.1\liferay-developer-studio\DeveloperStudio\configuration\org.eclipse.osgi\655\0\.cp -Dfile.encoding=Cp1256 
+java_command: org.eclipse.ant.internal.launching.remote.InternalAntRunner -Dorg.eclipse.ant.core.ANT_PROCESS_ID=1456307358504 -Declipse.connect.port=50135 -Declipse.pdebuild.home=/D:/6.1/liferay-developer-studio/DeveloperStudio/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/./ -Declipse.pdebuild.scripts=/D:/6.1/liferay-developer-studio/DeveloperStudio/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/scripts/ -Declipse.pdebuild.templates=/D:/6.1/liferay-developer-studio/DeveloperStudio/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/templates/ -Dant.home=D:\6.1\liferay-developer-studio\DeveloperStudio\plugins\org.apache.ant_1.9.2.v201404171502 -logger org.eclipse.ant.internal.launching.remote.logger.RemoteAntBuildLogger -inputhandler org.eclipse.ant.internal.ui.antsupport.inputhandler.ProxyInputHandler -buildfile D:\6.1\liferay-developer-studio\liferay-plugins-sdk-6.1.2\hooks\Login-hook\build.xml
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files (x86)\Java\jdk1.6.0_33\bin
+PATH=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\TortoiseSVN\bin;d:\6.1\apache-ant-1.9.6\bin;C:\Program Files (x86)\Java\jdk1.6.0_33\bin/bin;C:\apache-tomcat-6.0.33/bin;d:\Liferay-94\TestConvert\apache-maven-3.3.9\bin
+USERNAME=f_paseban
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, tsc, tscinvbit
+
+Memory: 4k page, physical 6255496k(954748k free), swap 6845728k(5172k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.45-b08) for windows-amd64 JRE (1.7.0_45-b18), built on Oct  8 2013 05:47:22 by "java_re" with unknown MS VC++:1600
+
+time: Wed Feb 24 13:19:19 2016
+elapsed time: 0 seconds
+

@@ -1,0 +1,25 @@
+#p_p_id_85_INSTANCE_9lwi7hznMUTS_   ul li a{
+
+
+    text-decoration: initial;
+
+}
+
+
+
+
+#p_p_id_85_INSTANCE_9lwi7hznMUTS_    ul ul li a{
+    color:red
+  }
+#p_p_id_85_INSTANCE_9lwi7hznMUTS_    ul ul ul li a{
+    color:green
+  }
+#p_p_id_85_INSTANCE_9lwi7hznMUTS_   ul ul {
+  list-style-type: circle;
+  color:yellow;
+ }
+
+#p_p_id_85_INSTANCE_9lwi7hznMUTS_ .portlet-borderless-container {
+    height: 200PX;
+    OVERFLOW: SCROLL;
+}
